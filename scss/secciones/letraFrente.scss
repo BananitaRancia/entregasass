@@ -1,0 +1,64 @@
+.main {
+    max-width: 1024px;
+    margin: auto;
+
+    .letraFrente {
+        // background-color: rgba(0, 0, 0, 30%);
+
+
+        .primeraparte {
+            display: flex;
+            font-family: 'Calibri';
+            margin-top: 50px;
+            margin-bottom: 25px;
+            color: white;
+            justify-content: center;
+
+            .titularNoticia {
+                max-width: auto;
+                margin-right: 50px;
+            }
+
+            .espacioentrelinea {
+                line-height: 20px;
+                text-align: justify;
+
+            }
+
+            .letraGrande {
+                font-family: 'Calibri';
+                font-size: 110%;
+                font-weight: bolder;
+            }
+
+            .albumBanda {
+                display: flex;
+                flex-direction: column;
+                max-width: 380px;
+                position: relative;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+
+
+        }
+
+    }
+}
+
+.segundaparte {
+    font-family: 'Calibri';
+    margin-top: 50px;
+    margin-bottom: 50px;
+    line-height: 20px;
+    text-align: justify;
+    color: white;
+
+    .negrita {
+        color: rgb(55, 196, 102);
+        background-color: rgba(0, 0, 0, 40%);
+        font-style: oblique;
+    }
+}

@@ -1,0 +1,182 @@
+/* Reseteo */
+* {
+  margin: 0;
+  padding: 0; }
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 10px; }
+
+h3 {
+  font-size: 30px;
+  margin-bottom: 10px; }
+
+body {
+  background-image: url(https://1.bp.blogspot.com/-BEivl-v8o_M/WSgRAREnsWI/AAAAAAAAInY/n2dHCLoJYzk1x-BPTWaeOaz6TU5FdbBcQCLcB/s1600/Sonata-Arctica-kirjan-kansi.jpg);
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+  animation: movimiento alternate linear infinite;
+  animation-duration: 20s; }
+
+@keyframes movimiento {
+  from {
+    background-position: top; }
+  to {
+    background-position: bottom; } }
+
+.header {
+  background-color: blue;
+  background-image: linear-gradient(90deg, #00d4ff 0%, #1b1491 100%);
+  display: flex;
+  justify-content: space-between; }
+  .header img {
+    width: 175px;
+    height: 60px;
+    padding: 5px 5px 5px;
+    transition: 5s;
+    animation-name: girando;
+    animation-duration: 5s;
+    animation-iteration-count: infinite; }
+  .header a {
+    color: gray; }
+  .header .menuflex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: 30px; }
+  .header .botonhover:hover {
+    background-color: #bbbbbb;
+    padding: auto;
+    transition: 1s; }
+  .header li {
+    list-style: none;
+    padding: 15px;
+    border: 2px solid #2ac7db;
+    border-radius: 4px;
+    margin: 4px;
+    display: block; }
+  .header a {
+    text-decoration: none;
+    text-transform: uppercase; }
+
+@keyframes girando {
+  0% {
+    transform: rotatey(45deg); }
+  25% {
+    transform: rotatey(90deg); }
+  50% {
+    transform: rotatey(180deg); }
+  75% {
+    transform: rotatey(270deg); }
+  100% {
+    transform: rotatey(360deg); } }
+
+.main {
+  max-width: 1024px;
+  margin: auto; }
+  .main .letraFrente .primeraparte {
+    display: flex;
+    font-family: 'Calibri';
+    margin-top: 50px;
+    margin-bottom: 25px;
+    color: white;
+    justify-content: center; }
+    .main .letraFrente .primeraparte .titularNoticia {
+      max-width: auto;
+      margin-right: 50px; }
+    .main .letraFrente .primeraparte .espacioentrelinea {
+      line-height: 20px;
+      text-align: justify; }
+    .main .letraFrente .primeraparte .letraGrande {
+      font-family: 'Calibri';
+      font-size: 110%;
+      font-weight: bolder; }
+    .main .letraFrente .primeraparte .albumBanda {
+      display: flex;
+      flex-direction: column;
+      max-width: 380px;
+      position: relative;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      margin-left: 20px;
+      margin-right: 20px; }
+
+.segundaparte {
+  font-family: 'Calibri';
+  margin-top: 50px;
+  margin-bottom: 50px;
+  line-height: 20px;
+  text-align: justify;
+  color: white; }
+  .segundaparte .negrita {
+    color: #37c466;
+    background-color: black;
+    font-style: oblique; }
+
+footer {
+  width: 100%;
+  height: 100px; }
+  footer ul {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    justify-content: center; }
+    footer ul .footerflex {
+      display: flex;
+      margin-top: 50px; }
+  footer li:hover {
+    transform: scale(1.5);
+    transition: .5s; }
+  footer li a {
+    text-transform: uppercase;
+    color: white;
+    font-size: 30px;
+    padding: 50px; }
+
+/* Pagina index - @media resoluciones 425px*/
+@media (max-width: 425px) {
+  .indexresponsive {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "primeraparte" "segundaparte" "footer425"; }
+  .header {
+    grid-area: header; }
+  .header nav {
+    display: flex;
+    flex-direction: row; }
+  .header nav ul {
+    display: flex;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 4px;
+    margin: 1px;
+    justify-content: center; }
+  .header a {
+    max-width: 300px;
+    display: flex;
+    color: white; }
+  .primeraparte {
+    grid-area: primeraparte;
+    flex-direction: column; }
+  .titularNoticia {
+    margin: 50px; }
+  .titularNoticia h2 {
+    text-align: center; }
+  .titularNoticia p {
+    text-align: justify; }
+  .albumBanda {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px; }
+  .segundaparte {
+    grid-area: segundaparte;
+    justify-content: center;
+    margin: 50px; }
+  .segundaparte h3 {
+    text-align: center; }
+  .footer425 {
+    grid-area: footer425; }
+  .aside {
+    display: none; } }
