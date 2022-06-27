@@ -3,15 +3,27 @@
     margin: 0;
     padding: 0;
 }
+@import './secciones/variables';
+@import './secciones/mixin';
+@import './secciones/header.scss';
+@import './secciones/letraFrente.scss';
+@import './secciones/footer.scss';
+@import './secciones/_contacto.scss';
+@import './secciones/_discografia.scss';
+@import './secciones/noticias';
+@import './secciones/tour';
+@import './secciones/index';
 
 h2 {
     font-size: 30px;
-    margin-bottom: 10px
+    margin-bottom: 10px;
+    @include fontStyle($colorFondo,$textoTitulo);
 }
 
 h3 {
-    font-size: 30px;
-    margin-bottom: 10px;
+    @extend h2 ;
+    text-align: center;
+    @include fontStyle($colorFondo, $textoTitulo);
 }
 
 body {
@@ -20,7 +32,7 @@ body {
     height: 100%;
     background-size: 100%;
     animation: movimiento alternate linear infinite;
-    animation-duration: 20s;
+    animation-duration: 10s;
 }
 
 @keyframes movimiento {
@@ -33,6 +45,6 @@ body {
     }
 }
 
-@import './secciones/header.scss';
-@import './secciones/letraFrente.scss';
-@import './secciones/footer.scss';
+
+
+

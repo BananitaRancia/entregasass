@@ -3,28 +3,6 @@
   margin: 0;
   padding: 0; }
 
-h2 {
-  font-size: 30px;
-  margin-bottom: 10px; }
-
-h3 {
-  font-size: 30px;
-  margin-bottom: 10px; }
-
-body {
-  background-image: url(https://1.bp.blogspot.com/-BEivl-v8o_M/WSgRAREnsWI/AAAAAAAAInY/n2dHCLoJYzk1x-BPTWaeOaz6TU5FdbBcQCLcB/s1600/Sonata-Arctica-kirjan-kansi.jpg);
-  width: 100%;
-  height: 100%;
-  background-size: 100%;
-  animation: movimiento alternate linear infinite;
-  animation-duration: 20s; }
-
-@keyframes movimiento {
-  from {
-    background-position: top; }
-  to {
-    background-position: bottom; } }
-
 .header {
   background-color: blue;
   background-image: linear-gradient(90deg, #00d4ff 0%, #1b1491 100%);
@@ -161,7 +139,7 @@ footer {
     flex-direction: column; }
   .titularNoticia {
     margin: 50px; }
-  .titularNoticia h2 {
+  .titularNoticia h2, .titularNoticia h3 {
     text-align: center; }
   .titularNoticia p {
     text-align: justify; }
@@ -180,3 +158,161 @@ footer {
     grid-area: footer425; }
   .aside {
     display: none; } }
+
+.form {
+  width: 20%;
+  background: #4850c0;
+  padding: 20px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 5px;
+  font-family: 'Calibri';
+  color: white;
+  text-align: center; }
+  .form .h5 {
+    font-size: 22px;
+    margin-bottom: 20px; }
+  .form .caja {
+    width: 55%;
+    background: #e0e0e0;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-family: 'Calibri';
+    font-size: 18px;
+    border-color: rgba(3, 3, 114, 0.938); }
+  .form .cajatexto {
+    width: 55%;
+    background: #e0e0e0;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-family: 'Calibri';
+    font-size: 18px;
+    border-color: rgba(3, 3, 114, 0.938); }
+  .form .cajacomentar {
+    width: 60%;
+    background-color: #030372;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-family: 'Calibri';
+    font-weight: bold;
+    font-size: 20px; }
+
+.grilla {
+  display: grid;
+  grid-template-columns: 2.5fr 2.5fr 2.5fr 2.0fr;
+  grid-template-areas: "headergrid headergrid headergrid headergrid" "navmenu primeraseccion primeraseccion aside" "navmenu segundaseccion segundaseccion aside" "footergrid footergrid footergrid footergrid"; }
+  .grilla .navmenu {
+    grid-area: navmenu;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .grilla .navmenu li {
+      list-style: none;
+      padding: 20px;
+      height: 30px;
+      margin-top: 30px;
+      text-align: center; }
+      .grilla .navmenu li:hover {
+        background-color: #194344; }
+      .grilla .navmenu li a {
+        color: white;
+        text-decoration: none; }
+    .grilla .navmenu img {
+      width: 200px; }
+  .grilla .headergrid {
+    grid-area: headergrid;
+    text-align: center;
+    color: white;
+    height: 30vh;
+    padding-top: 30px; }
+    .grilla .headergrid h3 {
+      font-family: 'Calibri';
+      font-size: 40px; }
+    .grilla .headergrid p {
+      font-family: 'Calibri';
+      text-align: center;
+      font-size: 30px;
+      padding: 15px; }
+  .grilla .primeraseccion h4 {
+    font-family: 'Calibri';
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    justify-content: center; }
+  .grilla .primeraseccion div {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    max-width: auto;
+    margin: auto; }
+    .grilla .primeraseccion div p {
+      font-family: 'Calibri';
+      color: white; }
+    .grilla .primeraseccion div img {
+      width: 300px; }
+  .grilla .segundaseccion {
+    grid-area: segundaseccion;
+    display: flex;
+    flex-direction: column; }
+    .grilla .segundaseccion h5 {
+      font-family: 'Calibri';
+      font-size: 30px;
+      color: white;
+      text-align: center; }
+    .grilla .segundaseccion div p {
+      font-family: 'Calibri';
+      color: white;
+      text-align: center;
+      margin-top: 30px;
+      margin-bottom: 30px; }
+    .grilla .segundaseccion div ul {
+      font-family: 'Calibri';
+      color: white;
+      text-align: center;
+      margin: 15px;
+      list-style: none; }
+  .grilla .aside {
+    grid-area: aside;
+    text-align: center; }
+    .grilla .aside h6 {
+      font-size: 25px; }
+    .grilla .aside ul {
+      list-style: none;
+      font-size: 20px;
+      padding: 15px; }
+  .grilla .footergrid {
+    display: flex;
+    grid-area: footergrid;
+    flex-direction: column;
+    align-items: center;
+    height: 20vh;
+    text-transform: uppercase; }
+
+h2, h3 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  background-color: gray;
+  color: blue; }
+
+h3 {
+  text-align: center;
+  background-color: gray;
+  color: blue; }
+
+body {
+  background-image: url(https://1.bp.blogspot.com/-BEivl-v8o_M/WSgRAREnsWI/AAAAAAAAInY/n2dHCLoJYzk1x-BPTWaeOaz6TU5FdbBcQCLcB/s1600/Sonata-Arctica-kirjan-kansi.jpg);
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+  animation: movimiento alternate linear infinite;
+  animation-duration: 10s; }
+
+@keyframes movimiento {
+  from {
+    background-position: top; }
+  to {
+    background-position: bottom; } }

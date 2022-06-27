@@ -1,0 +1,151 @@
+// Seccion Noticias
+
+.grilla {
+    display: grid;
+    grid-template-columns: 2.5fr 2.5fr 2.5fr 2.0fr;
+    grid-template-areas:
+        "headergrid headergrid headergrid headergrid"
+        "navmenu primeraseccion primeraseccion aside"
+        "navmenu segundaseccion segundaseccion aside"
+        "footergrid footergrid footergrid footergrid";
+
+    .navmenu {
+        grid-area: navmenu;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        li {
+            list-style: none;
+            padding: 20px;
+            height: 30px;
+            margin-top: 30px;
+            text-align: center;
+
+            &:hover {
+                background-color: rgba(25, 67, 68, 50%);
+            }
+
+            a {
+                color: white;
+                text-decoration: none;
+            }
+        }
+
+        img {
+            width: 200px;
+        }
+    }
+
+
+    .headergrid {
+        grid-area: headergrid;
+        text-align: center;
+        color: white;
+        height: 30vh;
+        padding-top: 30px;
+
+        h3 {
+            font-family: 'Calibri';
+            font-size: 40px;
+        }
+
+        p {
+            font-family: 'Calibri';
+            text-align: center;
+            font-size: 30px;
+            padding: 15px;
+        }
+    }
+
+    .primeraseccion {
+        h4 {
+            font-family: 'Calibri';
+            font-size: 30px;
+            color: white;
+            text-align: center;
+            justify-content: center;
+        }
+
+        div {
+            display: flex;
+            justify-content: center;
+            padding: 50px;
+            max-width: auto;
+            margin: auto;
+
+
+            p {
+                font-family: 'Calibri';
+                color: white;
+                
+
+
+
+            }
+
+            img {
+                width: 300px;
+
+            }
+        }
+    }
+
+    .segundaseccion {
+        grid-area: segundaseccion;
+        display: flex;
+        flex-direction: column;
+
+        h5 {
+            font-family: 'Calibri';
+            font-size: 30px;
+            color: white;
+            text-align: center;
+        }
+
+        div {
+            p {
+                font-family: 'Calibri';
+                color: white;
+                text-align: center;
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+
+            ul {
+                font-family: 'Calibri';
+                color: white;
+                text-align: center;
+                margin: 15px;
+                list-style: none;
+
+            }
+        }
+    }
+
+    .aside {
+        grid-area: aside;
+        text-align: center;
+
+        h6 {
+            font-size: 25px;
+        }
+
+        ul {
+            list-style: none;
+            font-size: 20px;
+            padding: 15px;
+
+        }
+    }
+
+    .footergrid {
+        display: flex;
+        grid-area: footergrid;
+        flex-direction: column;
+        align-items: center;
+        height: 20vh;
+        text-transform: uppercase;
+    }
+
+}

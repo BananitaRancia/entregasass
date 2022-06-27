@@ -1,0 +1,21 @@
+Extend y mixin se agrego uso en main.scss
+
+pagina Index
+Keywords : "sonata arctica, acoustic, power metal"
+Description : "Acoustic Adventures - Volume One, Tony Kakko, The Rest Of The Sun Belongs To Me"
+
+pagina Noticias
+Kerwords : "latin american tour, shows, gira cancelada, noticias"
+Description : "noticias de la banda sonata artica"
+
+pagina Tour
+
+Keywords : "tour, Finland , USA, Russia, Spain"
+Description : "Tour Sonata Arctica 2022, june, july, august"
+
+Se agrego secciones sass
+_contacto ; _discografia ; _index ; _tour ; _noticias ; _variables ; mixin
+
+secciones sass que falta completar
+_discografia ; _tour ; _index
+

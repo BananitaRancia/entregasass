@@ -1,0 +1,7 @@
+// Mixin
+
+@mixin fontStyle ($colorFondo,$textoTitulo) {
+    background-color: $colorFondo;
+    color: $textoTitulo;
+    
+}
